@@ -5,6 +5,6 @@
     <!-- $FIELD_NAME_TITLE$ Field -->
     <div class="form-group">
         {!! Form::label('$FIELD_NAME$', __('$FIELD_NAME$').':') !!}
-    <p><img src="{{ GetImage(class_basename($$MODEL_NAME_CAMEL$), $$MODEL_NAME_CAMEL$->id,'$FIELD_NAME$')[0] }}" height="50px" alt=""></p>
+    <p><img src="{{ GetImage(class_basename($$MODEL_NAME_CAMEL$), $$MODEL_NAME_CAMEL$->id,'$FIELD_NAME$')[0]0->image }}" height="50px" alt=""></p>
     </div>
 @endif
