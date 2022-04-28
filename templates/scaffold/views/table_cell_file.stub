@@ -1,7 +1,7 @@
 <td>
    @if (isset(GetImage(class_basename($$MODEL_NAME_CAMEL$), $$MODEL_NAME_CAMEL$->id,'$FIELD_NAME$')[0]))
 
-        <img src="{{ GetImage(class_basename($$MODEL_NAME_CAMEL$), $$MODEL_NAME_CAMEL$->id,'$FIELD_NAME$')[0]->image }}" height="50px" alt="">
+        <img src="{{ GetImage(class_basename($$MODEL_NAME_CAMEL$), $$MODEL_NAME_CAMEL$->id,'$FIELD_NAME$')[0]->image }}" height="50px" style="border-radius:10px;" alt="">
    @endif
 
 </td>

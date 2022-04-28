@@ -1,12 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-     <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') }}">{{__('$MODEL_NAME_PLURAL_CAMEL$')}}</a>
-            </li>
-            <li class="breadcrumb-item active">{{__('crud.detail')}}</li>
-     </ol>
+
      <div class="container-fluid">
           <div class="animated fadeIn">
                  @include('markup-templates::common.errors')
@@ -15,7 +10,7 @@
                          <div class="card">
                              <div class="card-header">
                                  <strong>{{__('crud.detail')}}</strong>
-                                  <a href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') }}" class="btn btn-ghost-light">Back</a>
+                                  <a href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') }}" class="btn btn-gradient-success">{{ __("Back") }}</a>
                              </div>
                              <div class="card-body">
                                  @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.show_fields')
