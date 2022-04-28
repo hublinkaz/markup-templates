@@ -1,0 +1,9 @@
+<!-- $FIELD_NAME_TITLE$ Field -->
+<div class="mb-1">
+    {!! Form::label('$FIELD_NAME$', __('$FIELD_NAME$').':') !!}
+    {!! Form::textarea('$FIELD_NAME$', null, ['class' => 'form-control'$SIZE$]) !!}
+</div>
+
+    <script>
+        CKEDITOR.replace('$FIELD_NAME$');
+    </script>

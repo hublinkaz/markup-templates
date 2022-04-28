@@ -1,0 +1,42 @@
+{
+    "name": "hublinkaz/markup-templates",
+    "type": "library",
+    "description": "Markup templates for hublinkaz Laravel Generator",
+    "keywords": [
+        "hublinkaz",
+        "laravel",
+        "generator",
+        "markup",
+        "templates",
+        "bootstrap"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ağa MUstafayev",
+            "email": "info@hublink.az"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5|^8.0",
+        "illuminate/support": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hublinkaz\\MarkUpTemplates\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Hublinkaz\\MarkUpTemplates\\MarkUpTemplatesServiceProvider"
+            ]
+        }
+    },
+    "funding": [
+        {
+            "type": "",
+            "url": ""
+        }
+    ]
+}

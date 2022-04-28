@@ -1,0 +1,39 @@
+@extends('layouts.app')
+
+@section('content')
+
+    <div class="container-fluid">
+        <div class="animated fadeIn">
+             @include('flash::message')
+             <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="dataTables_wrapper dt-bootstrap5 no-footer">
+                            <div class="card-header border-bottom p-1">
+                                <div class="head-label ms-1">
+                                    <h6 class="mb-0">{{__('$MODEL_NAME_PLURAL_CAMEL$')}}</h6>
+                                </div>
+                                <div class="dt-action-buttons text-end">
+                                    <div class="dt-buttons d-inline-flex">
+                                        <a class="btn btn-gradient-info me-2" href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.create') }}">
+                                            <span style="color:white">{{__('Create $MODEL_NAME_PLURAL_CAMEL$')}}</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                         <div class="card-body">
+                             @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.table')
+                              <div class="pull-right mr-3">
+                                     $PAGINATE$
+                              </div>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+
+         </div>
+    </div>
+@endsection
+

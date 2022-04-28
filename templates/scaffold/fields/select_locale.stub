@@ -1,0 +1,11 @@
+<!-- $FIELD_NAME_TITLE$ Field -->
+<div class="mb-1">
+    {!! Form::label('$FIELD_NAME$', __('$FIELD_NAME$').':') !!}
+    {!! Form::select('$FIELD_NAME$', $INPUT_ARR$, null, ['class' => 'form-control js-example-basic-multiple','multiple'=>'multiple','id='=>'myMulti']) !!}
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.js-example-basic-multiple').select2();
+    });
+</script>

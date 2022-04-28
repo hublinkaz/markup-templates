@@ -1,0 +1,11 @@
+$FIELDS$
+
+
+
+<input type="hidden" name="lang" value="{{ app()->getLocale() }}">
+
+<!-- Submit Field -->
+<div class="form-group col-sm-12">
+    {!! Form::submit(__('crud.save'), ['class' => 'btn btn-gradient-info']) !!}
+    <a href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') }}" class="btn btn-gradient-secondary">{{__('crud.cancel')}}</a>
+</div>

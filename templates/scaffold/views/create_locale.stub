@@ -1,0 +1,39 @@
+@extends('layouts.app')
+
+@section('content')
+
+
+
+
+
+    <div class="content-body">
+        <!-- Validation -->
+                        @include('markup-templates::common.errors')
+
+        <section class="bs-validation">
+            <div class="row">
+                <!-- Bootstrap Validation -->
+                <div class="col-md-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">{{__('Create $MODEL_NAME_PLURAL_CAMEL$')}}</h4>
+                        </div>
+                        @include('markup-templates::common.errors')
+
+                        <div class="card-body">
+                                {!! Form::open(['route' => '$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.store'$FILES$]) !!}
+
+                                   @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.fields')
+
+                           {!! Form::close() !!}
+                        </div>
+                    </div>
+                </div>
+                <!-- /Bootstrap Validation -->
+
+            </div>
+        </section>
+        <!-- /Validation -->
+
+    </div>
+@endsection
